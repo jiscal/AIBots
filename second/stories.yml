@@ -1,0 +1,30 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: query
+  - action: utter_answer_query
+  - intent: ask
+  - action: utter_answer_ask
+  - intent: praise
+  - action: utter_answer_praise
+  - intent: goodbye
+  - action: utter_answer_goodbye
+  
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: query
+  - action: utter_answer_query
+  - intent: angry
+  - action: utter_answer_angry
+  - intent: goodbye
+  - action: utter_answer_goodbye
+
+

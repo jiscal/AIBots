@@ -1,0 +1,65 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - 你好
+    - how are you
+    - 嗨
+    - hi
+
+- intent: praise
+  examples: |
+    - 你人真好
+    - 你真漂亮
+    - 美
+
+- intent: ask
+  examples: |
+    - 过年回家么
+    - 带我去
+    - 可以一起么
+    
+- intent: query
+  examples: |
+    - 最近干啥呢
+    - 你在干嘛
+    - 你在做什么
+    - 忙什么
+ 
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - 再见
+    - 下次再见
+
+- intent: angry
+  examples: |
+    - 我生气了
+    - 不开心
+    - 难过
+    - 打你
