@@ -1,0 +1,113 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - 你好
+    - 你好啊
+    - 早上好
+    - 晚上好
+    - hello
+    - hi
+    - 嗨
+    - 嗨喽
+    - 见到你很高兴
+    - 嘿
+    - 早
+    - 上午好
+    - hello哈喽
+    - 哈喽哈喽
+    - hello hello
+    - 喂喂
+    - 你好
+    - how are you
+    - 嗨
+    - hi
+
+- intent: praise
+  examples: |
+    - 你人真好
+    - 你真漂亮
+    - 美
+    - 好看
+    - 太美了
+    - 让人难以忘记
+    - 惊艳
+    - 你长得美
+    - 你让人过目不忘
+    - 你美呆了
+
+- intent: ask_together
+  examples: |
+    - 带我去
+    - 可以一起么
+    - 能一起么
+    - 一道
+    - 同行
+    - 一路
+    - 同去
+
+    
+- intent: query_thing
+  examples: |
+    - 最近干啥呢
+    - 你在干嘛
+    - 你在做什么
+    - 忙什么
+    - 忙啥
+    - 干什么
+    - 做什么
+    - 干啥事情
+ 
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - 再见
+    - 下次再见
+
+- intent: angry
+  examples: |
+    - 我生气了
+    - 不开心
+    - 难过
+    - 打人
+    - 发怒
+    - 绝望
+    - 难受香菇
+    - 怒气冲冲
+    - 发火
+
+- intent: request_weather
+  examples: |
+    - 查天气
+    - 帮我查下天气
+    - 告诉我天气怎么样
+    - 我要查天气
+    - 天气怎么样
+    - 看下天气
+    - 天气如何
+    - 帮我查天气信息
+    - 我想知道[明天](date_time)的天气
+    - [星期一](date_time)的天气
+    - [今天](date_time)的天气怎么样
+    - 帮我查下[后天](date_time)的天气
+    - 查下[广州](address)的天气怎么样
+    - [长沙](address)的天气
+    - [深圳](address)[明天](date_time)的天气
+    - 查下[今天](date_time)[上海](address)的天气
+    - 帮我查查[佛山](address)这[周六](date_time)的天气
+    - 我想知道[上海](address)[明天](date_time)的天气
+    - [广州](address)[今天](date_time)的天气
+    - [杭州](address)[后天](date_time)的天气
+    - 你能告诉我[后天](date_time)[广州](address)的天气吗？

@@ -1,0 +1,46 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: query_thing
+  - action: utter_answer_query_thing
+  - intent: ask_together
+  - action: utter_answer_ask_together
+  - intent: praise
+  - action: utter_answer_praise
+  - intent: goodbye
+  - action: utter_answer_goodbye
+  
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: query_thing
+  - action: utter_answer_query_thing
+  - intent: angry
+  - action: utter_answer_angry
+  - intent: goodbye
+  - action: utter_answer_goodbye
+
+- story: weather path
+  steps:
+  - intent: request_weather
+  - action: weather_form
+  - active_loop: weather_form
+  - active_loop: null
+
+- story: weather_bye pathnin
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_weather
+  - action: weather_form
+  - active_loop: weather_form
+  - active_loop: null
+  - intent: goodbye
+  - action: utter_answer_goodbye
